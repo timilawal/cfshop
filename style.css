@@ -1,0 +1,151 @@
+.container {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    overflow: hidden;
+}
+
+body {
+    margin: -1rem;
+    padding: 0;
+}
+
+.home {
+    background: url(images/coffeshop.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30rem;
+    color: #f4f4f4;
+}
+
+.home-bg{
+    background-color: rgba(0, 0, 0, 0.24);
+    height: 30rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.nav-list a:hover {
+    color: rgb(184, 88, 25);
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.nav-list ul {
+    display: flex;
+    background-color: rgba(3, 3, 3, 0.486);
+}
+
+.nav-list li{
+    margin: 0 auto;
+    list-style: none;
+    padding-top: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.heading {
+    margin-left: 2rem;
+    padding-top: 3rem;
+}
+
+.paragraph {
+    margin-left: 2rem;
+    line-height: 1.5rem;
+}
+
+.shop-button {
+    border: none;
+    margin-left: 3rem;
+    background-color: rgb(184, 88, 25);
+    color: #f4f4f4;
+    width: 7rem;
+    height: 3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-content {
+    display: flex;
+}
+
+.about-content p{
+    width: 50%;
+}
+
+.about-image {
+    width: 20rem;
+    height: 20rem;
+    margin-left: 1.5rem;
+}
+
+.about {
+    background-color: #f4f4f4;
+    margin-top: -2rem;
+}
+
+.best {
+    text-align: center;
+}
+
+.best:hover {
+    background-color: #e7e6e6;
+}
+
+.best img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.best .paragraph {
+    padding-bottom: 3rem;
+}
+
+.mini-heading {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.sales-content {
+    text-align: center;
+}
+
+.sales {
+    background: url(images/gt.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -2rem;
+    padding: 2rem 0 4rem 0;
+    color: #f4f4f4;
+}
+
+.shop {
+    background-color: #f4f4f4;
+}
+
+.shop .paragraph {
+    padding: 2rem 0;
+}
+
+.shop .shop-button {
+    margin-bottom: 2rem;
+}
+
+@media(max-width: 768px){
+
+.about-content {
+    display: block;
+}
+
+.about-content p {
+    width: 90%;
+}
+
+.about-image {
+    margin: 0 auto;
+}
+
+}
