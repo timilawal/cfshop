@@ -2,12 +2,12 @@
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     overflow: hidden;
-    -webkit-appearance: none;
 }
 
 body {
     margin: -1rem;
     padding: 0;
+    -webkit-appearance: none;
 }
 
 .home {
