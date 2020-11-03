@@ -2,6 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     overflow: hidden;
+    -webkit-appearance: none;
 }
 
 body {
