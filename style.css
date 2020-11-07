@@ -1,14 +1,12 @@
 .container {
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
     overflow: hidden;
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    margin: -1rem;
-    padding: 0;
-    -webkit-appearance: none;
-}
 
 .home {
     background: url(images/coffeshop.jpg) no-repeat;
@@ -28,7 +26,8 @@ body {
     color: #f4f4f4;
 }
 
-.nav-list a:hover {
+.nav-list a:hover,
+.nav-list a:active {
     color: rgb(184, 88, 25);
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0.24);
@@ -42,7 +41,8 @@ body {
 .nav-list li{
     margin: 0 auto;
     list-style: none;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
     font-size: 1rem;
     font-weight: 500;
 }
@@ -51,6 +51,7 @@ body {
 .heading {
     margin-left: 2rem;
     padding-top: 3rem;
+    font-size: 1.5rem;
 }
 
 .paragraph {
@@ -91,8 +92,9 @@ body {
     text-align: center;
 }
 
-.best:hover {
-    background-color: #e7e6e6;
+.best:hover,
+.best:active {
+    background-color: #ffffff
 }
 
 .best img {
@@ -105,9 +107,19 @@ body {
     padding-bottom: 3rem;
 }
 
-.mini-heading {
+.mini-heading, 
+.reviewer-name {
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+.reviews:hover,
+.reviews:active {
+    background-color: #e7e6e6;
+}
+
+.reviewer-name {
+    margin-left: 2rem;
 }
 
 .sales-content {
@@ -118,12 +130,13 @@ body {
     background: url(images/gt.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: -2rem;
-    padding: 2rem 0 4rem 0;
+    margin-top: 2rem;
+    padding: 2rem 0 3rem 0;
     color: #f4f4f4;
 }
 
 .shop {
+    margin-top : -2rem;
     background-color: #f4f4f4;
 }
 
@@ -134,6 +147,8 @@ body {
 .shop .shop-button {
     margin-bottom: 2rem;
 }
+
+
 
 @media(max-width: 768px){
 
