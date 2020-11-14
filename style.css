@@ -229,8 +229,8 @@ footer {
         top: 15%;
         right: 5%;
         flex-direction: column;
-        clip-path: circle(50px at 90% -15%);
-        -webkit-clip-path: circle(50px at 90% -15%);
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -20%);
         transition: all 1s ease-out;
         pointer-events: none;
     }
