@@ -1,167 +1,292 @@
-.container {
-    font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
-    -webkit-appearance: none;
-    width: 100%;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
 }
-
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.logo {
+    position: absolute;
+    margin: 2rem 0 0 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-bottom: solid #f4f4f4;
+}
 
 .home {
-    background: url(images/coffeshop.jpg) no-repeat;
+    background: url(images/pexels-helena-lopes-887723.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    height: 30rem;
+    height: 100vh;
     color: #f4f4f4;
 }
-
-.home-bg{
-    background-color: rgba(0, 0, 0, 0.24);
-    height: 30rem;
+.home-bg {
+    background: rgba(0, 0, 0, 0.349);
+    height: 100vh;
+    
 }
-
-.nav-list a {
+.home-content {
+    width: 60%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 7rem;
+}
+.nav-list {
+    position: fixed;
+    width: 100%;
+    height: 15vh;
+    background: rgba(48, 17, 13, 0.53);
+}
+.nav-links{
+    display: flex;
     text-decoration: none;
-    color: #f4f4f4;
-}
-
-.nav-list a:hover,
-.nav-list a:active {
-    color: rgb(184, 88, 25);
-    font-weight: 600;
-    background-color: rgba(0, 0, 0, 0.24);
-}
-
-.nav-list ul {
-    display: flex;
-    background-color: rgba(3, 3, 3, 0.486);
-}
-
-.nav-list li{
-    margin: 0 auto;
     list-style: none;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-
-.heading {
-    margin-left: 2rem;
-    padding-top: 3rem;
-    font-size: 1.5rem;
-}
-
-.paragraph {
-    margin-left: 2rem;
-    line-height: 1.5rem;
-}
-
-.shop-button {
-    border: none;
-    margin-left: 3rem;
-    background-color: rgb(184, 88, 25);
-    color: #f4f4f4;
-    width: 7rem;
-    height: 3rem;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.about-content {
-    display: flex;
-}
-
-.about-content p{
     width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
 }
-
-.about-image {
-    width: 20rem;
-    height: 20rem;
-    margin-left: 1.5rem;
+.nav-list a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
 }
-
-.about {
-    background-color: #f4f4f4;
-    margin-top: -2rem;
+.nav-list a:hover {
+    font-size: 1.1rem;
 }
-
+.heading {
+    font-size: 2.2rem;
+    margin: 2rem 0;
+    font-family: 'Playfair Display', serif;
+}
+.paragraph {
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+.button {
+    border: none;
+    background: rgb(48, 17, 13);
+    color: #ffffff;
+    width: 9rem;
+    height: 3rem;
+    position: relative;
+    margin: 1rem 0;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+}
+.button:hover{
+    letter-spacing: 0.1rem;
+    width: 10rem;
+}
+.head-title:hover {
+    border-bottom: solid rgb(0, 0, 0);
+    width: 90%;
+}
+.best img {
+    width: 5rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin: 2rem 0;
+}
+.best img:hover {
+    border: solid rgb(48, 17, 13);
+}
 .best {
     text-align: center;
 }
-
-.best:hover,
-.best:active {
-    background-color: #ffffff
+.mini-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
-
-.best img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
+.about {
+    margin: 0 3rem;
 }
-
-.best .paragraph {
-    padding-bottom: 3rem;
+.about-content {
+    display: flex;
+    margin-bottom: 5rem;
 }
-
-.mini-heading, 
-.reviewer-name {
-    font-size: 1.3rem;
-    font-weight: 600;
+.about-content p {
+    width: 80%;
 }
-
-.reviews:hover,
-.reviews:active {
-    background-color: #e7e6e6;
+.about-image {
+    width: 70%;
+    margin-left: 3rem;
 }
-
-.reviewer-name {
-    margin-left: 2rem;
-}
-
-.sales-content {
-    text-align: center;
-}
-
 .sales {
-    background: url(images/gt.jpg) no-repeat;
+    background: url(images/xz.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    margin-top: 2rem;
-    padding: 2rem 0 3rem 0;
+    margin: 5rem 0;
+    height: 50vh;
+}
+.sales-bg {
+    background: rgba(0, 0, 0, 0.349);
+    height: 50vh;
+}
+.sale {
+    padding: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+.sales-content {
+    text-align: center;
     color: #f4f4f4;
 }
-
+.sales-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.sales-content p{
+    font-size: 1.2rem;
+}
 .shop {
-    margin-top : -2rem;
-    background-color: #f4f4f4;
+    margin: 0 3rem;
 }
-
-.shop .paragraph {
-    padding: 2rem 0;
+.contact {
+    margin: 0 3rem;
 }
-
-.shop .shop-button {
-    margin-bottom: 2rem;
+.contact-content {
+    display: flex;
 }
-
-
-
-@media(max-width: 768px){
-
-.about-content {
+.contact-form {
+    width: 80%;
+}
+.contact-form div {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+.contact-form div label {
     display: block;
+    margin-bottom: 0.5rem;
 }
-
-.about-content p {
+.contact-form div input,
+.contact-form div textarea {
     width: 90%;
 }
-
-.about-image {
-    margin: 0 auto;
+.contact-img {
+    width: 60%;
 }
+.newsletter {
+    margin: 3rem;
+    padding-top: 2rem;
+}
+.newsletter h1:hover {
+    border-bottom: solid #f4f4f4;
+}
+.stay-informed{
+    margin-bottom: 2rem;
+}
+.newsletter input {
+    display: block;
+}
+.terms {
+    margin: 3rem 0 0 0;
+    text-align: center;
+}
+.nws-lbl {
+    width: 70%;
+    font-family: 'Montserrat', sans-serif;
+}
+footer {
+    background: rgb(0, 0, 0);
+    color: #f4f4f4;
+    height: 60vh;
+}
+@media screen and (max-width :768px){
+    .line{
+        width: 30px;
+        height: 3px;
+        background: #f4f4f4;
+        margin: 5px;
+    }
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 40%;
+        transform: translate(-5%, -40%);
+        z-index: 2;
+    }
+    .nav-list{
+        position: fixed;
+    }
 
+    .nav-links{
+        background: rgb(48, 17, 13);
+        height: 60vh;
+        width: 70%;
+        top: 15%;
+        right: 5%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -15%);
+        -webkit-clip-path: circle(50px at 90% -15%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(600px at 90% -15%);
+        -webkit-clip-path: circle(600px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.8s;
+    }
+    li.fade {
+        opacity: 1;
+    }
+
+    .home-content {
+        width: 90%;
+        margin-left: 3rem;
+    }
+    .about-content,
+    .sale,
+    .contact-content{
+        display: block;
+    }
+    .about-content p{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .about-image{
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .sales-number{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .sales-content p{
+        font-size: 1rem;
+    }
+    .contact-img{
+        width: 100%;
+    }
 }
