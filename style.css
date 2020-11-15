@@ -35,7 +35,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     margin-left: 7rem;
 }
 .nav-list {
@@ -77,7 +76,6 @@ body {
     color: #ffffff;
     width: 9rem;
     height: 3rem;
-    position: relative;
     margin: 1rem 0;
     font-family: 'Montserrat', sans-serif;
     border-radius: 5px;
@@ -170,9 +168,13 @@ body {
     display: block;
     margin-bottom: 0.5rem;
 }
-.contact-form div input,
-.contact-form div textarea {
+.contact-form div input{
     width: 90%;
+    height: 2rem;
+}
+.contact-form textarea {
+    max-height: 5rem;
+    max-width: 90%;
 }
 .contact-img {
     width: 60%;
@@ -196,6 +198,7 @@ body {
 }
 .nws-lbl {
     width: 70%;
+    height: 2rem;
     font-family: 'Montserrat', sans-serif;
 }
 footer {
@@ -218,26 +221,23 @@ footer {
         transform: translate(-5%, -40%);
         z-index: 2;
     }
-    .nav-list{
-        position: fixed;
-    }
 
     .nav-links{
         background: rgb(48, 17, 13);
         height: 60vh;
         width: 70%;
-        top: 15%;
+        top: 10%;
         right: 5%;
         flex-direction: column;
-        clip-path: circle(50px at 90% -40%);
-        -webkit-clip-path: circle(50px at 90% -40%);
+        clip-path: circle(50px at 90% -15%);
+        -webkit-clip-path: circle(50px at 90% -15%);
         transition: all 1s ease-out;
         pointer-events: none;
     }
 
     .nav-links.open {
-        clip-path: circle(600px at 90% -40%);
-        -webkit-clip-path: circle(600px at 90% -40%);
+        clip-path: circle(700px at 90% -15%);
+        -webkit-clip-path: circle(700px at 90% -15%);
         pointer-events: all;
     }
 
@@ -266,11 +266,9 @@ footer {
         height: 120vh;
     }
     .home-content {
-        position: absolute;
         width: 80%;
         margin-left: 3rem;
         display: block;
-        margin-top: -2rem;
         padding-top: 7rem;
     }
     .about-content,
